@@ -11,7 +11,6 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 @RequestMapping("/address")
 public class AddressController {
-
     @GetMapping("{cep}")
     public AddressDto getAddressByCep(@PathVariable("cep") String cep){
         RestTemplate restTemplate = new RestTemplate();
